@@ -1,6 +1,8 @@
 import { cn } from "@/utils/cn";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
     return (
@@ -41,6 +43,14 @@ const Hero = () => {
                         key={"hero-title"}
                         filter={true}
                     />
+                    <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                        Olá, somos a Fkn Tech Labs, uma startup inovadora especializada em soluções tecnológicas de ponta. Nossa missão é transformar ideias em realidade, impulsionando o futuro com criatividade e expertise.
+                    </p>
+                    <a href="#about"><MagicButton
+                        title="Veja meu trabalho"
+                        icon={<FaLocationArrow />}
+                        position="right"
+                    /></a>
                 </div>
             </div>
         </div>
